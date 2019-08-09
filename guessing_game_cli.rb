@@ -2,7 +2,7 @@
 def run_guessing_game
   rand_num = rand(6) + 1
   puts "Please make a guess between 1 to 6!"
-  user_input = gets.chomp()
+  user_input = gets.chomp.to_i()
 
   if user_input != rand_num
     puts "Sorry! The computer guessed <#{rand_num}>"
@@ -10,6 +10,11 @@ def run_guessing_game
     puts "You guessed the correct number!"
   end
 end
+
+
+
+
+
 
   # if input == "exit"
   #   puts "Goodbye!"
